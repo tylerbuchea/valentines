@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Della+Respira);
+@import url(http://fonts.googleapis.com/css?family=Caudex:400italic);
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+}
+
+h1 {
+  position: relative;
+  bottom: 10px;
+  z-index: 12;
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 4px 4px 1px #333;
+}
+
+body {
+  background: #2c3e50;
+  font-family: 'Caudex', italic;
+  }
+
+p {
+  font-size: 30px;
+  text-align: center;
+  color: #eee;
+  }
+
+p#bottom {
+  margin-top: 60px;
+  font-family: 'Caudex', italic;
+  }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 10;
+  }
+
+footer p { font-size: 15px; }
+
+.heart {
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 300px;
+  }
+
+.heart:before {
+  position: absolute;
+  right: 30px;
+  content: "";
+  width: 200px;
+  height: 290px;
+  background: #c0392b;
+
+  border-radius:         160px 160px 0 0;
+  animation: pulse_left 0.3s infinite;
+
+  /* For those using a different browser */
+  -webkit-transform: rotate(-47deg);
+  -moz-transform:    rotate(-47deg);
+  -ms-transform:     rotate(-47deg);
+  -o-transform:      rotate(-47deg);
+  transform:         rotate(-47deg);
+
+  }
+
+.heart:after {
+  position: absolute;
+  content: "";
+  right: -50px;
+  width: 200px;
+  height: 300px;
+  background: #c0392b;
+
+  border-radius:         160px 160px 0 0;
+  animation: pulse_right 0.3s infinite;
+
+  /* For those using a different browser */
+  -webkit-transform: rotate(47deg);
+  -moz-transform:    rotate(47deg);
+  -ms-transform:     rotate(47deg);
+  -o-transform:      rotate(47deg);
+  transform:         rotate(47deg);
+  }
+
+@keyframes pulse_right {
+    from {
+    transform:scale(1, 1) rotate(47deg);
+    }
+    50% {
+    transform:scale(1.14, 1.14) rotate(50deg);
+    }
+    to {
+    transform:scale(1, 1) rotate(47deg);
+    }
+  }
+
+@keyframes pulse_left {
+    from {
+    transform:scale(1, 1) rotate(-47deg);
+    }
+    50% {
+    transform:scale(1.2, 1.2) rotate(-41deg);
+    }
+    to {
+    transform:scale(1, 1) rotate(-45deg);
+
+    }
+  }
