@@ -3,5 +3,5 @@
 
 ## Usage
 
-* Visit this URL https://tylerbuchea.github.io/valentines?name=Mom
+* Visit this URL https://tylerbuchea.github.io/valentines/?name=Mom
 * Replace "Mom" in the URL with the name of your loved one. Then send them the new URL.
